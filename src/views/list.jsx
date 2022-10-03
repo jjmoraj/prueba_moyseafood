@@ -17,14 +17,7 @@ const UserList=()=>{
 
 
     const [users, setUsers] = React.useState([])
-  
-  
-    // const showDetails =(event,user) =>{
-    //     alert(event)
-    //     alert(user)
-    // }
-  
-  
+   
     const getUsers = async () =>{
   
       const usersFetch = await axios.get('https://jsonplaceholder.typicode.com/users/')
