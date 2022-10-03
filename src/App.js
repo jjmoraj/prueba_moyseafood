@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import './App.css';
 import Spinner from 'react-bootstrap/Spinner';
-import { Routes,Route,BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Switch, Route,  Navigate } from "react-router-dom";
 import UserView from './views/user';
 import UserList from './views/list';
 import HeaderComponent from './components/header';
@@ -42,23 +42,17 @@ function App() {
 
 
   return (
-    <>
-    <div className="App">
-
-      <HeaderComponent></HeaderComponent>
-
-      <BrowserRouter>
-
+    <div>
+      <Router>
         <Routes>
-        
+          <Route path='/' element={<HeaderComponent />} />
           <Route path='/users' element={<UserList />} />
-
           <Route  path='/users/:id' element={<UserView />}/>
         </Routes>
-      </BrowserRouter>
-     
-      </div>
-      </>
+      </Router>
+
+    </div>
+
 
   );
 }

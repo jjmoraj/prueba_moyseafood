@@ -13,14 +13,9 @@ const HeaderComponent = () =>{
           <div className="container">
             <h1 className="jumbotron-heading">Usuarios de MoySeaFood</h1>
             <p className="lead text-muted">Aqui encontraras los usuario de MoySeaFood, asi como sus distintos datos.</p>
-              
-                <BrowserRouter>
-                    <Link className="btn btn-primary my-2" to='/users'>
+                <Link className="btn btn-primary my-2" to='/users'>
                     Usuarios
-
-                    </Link>
-                </BrowserRouter>
-        
+                </Link>
           </div>
         </section>
         </>
