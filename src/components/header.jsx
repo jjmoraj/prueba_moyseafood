@@ -4,9 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 const HeaderComponent = () =>{
 
-
     return(
-
         <>
         <section className="jumbotron text-center">
   
@@ -19,7 +17,6 @@ const HeaderComponent = () =>{
           </div>
         </section>
         </>
-
     )
 }
 

@@ -12,18 +12,9 @@ import HeaderComponent from './components/header';
 
 function App() {
 
-
   const [loading, setLoading] = React.useState(false)
 
-
   const [users, setUsers] = React.useState([])
-
-
-  // const showDetails =(event,user) =>{
-  //     alert(event)
-  //     alert(user)
-  // }
-
 
   const getUsers = async () =>{
 
@@ -52,8 +43,6 @@ function App() {
       </Router>
 
     </div>
-
-
   );
 }
 

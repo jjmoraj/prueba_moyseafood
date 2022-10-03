@@ -15,7 +15,6 @@ const UserView = ()=>{
 
     const navigate = useNavigate();
 
-
     const getUser = async () =>{
 
         const usersFetch = await axios.get('https://jsonplaceholder.typicode.com/users/'+id.id)
